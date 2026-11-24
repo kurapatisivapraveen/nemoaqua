@@ -126,3 +126,5 @@ npm run preview
 6. **About Us** (`/about`): Implements `inrto.png` (Hero banner, Introduction, Our Story showroom photo, What We Offer cards, Core standards, CTA banner).
 7. **Aquarium Care Guide** (`/care-guide`): Implements `home page.png` (Featured guide, 6 categorized articles, Interactive modal reader, Quick tips, Contact an Expert CTA).
 8. **Wishlist** (`/wishlist`): Implements `my _wishlist.png` (Saved items grid, Remove button, Add to Cart button, Empty state with custom aquarium SVG illustration).
+# nemoaqua
+ shop application
