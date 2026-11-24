@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="nemoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF7A3D"/>
+      <stop offset="100%" stop-color="#E2583E"/>
+    </linearGradient>
+    <linearGradient id="aquaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#159EAA"/>
+      <stop offset="100%" stop-color="#123D4A"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#aquaGrad)"/>
+  <!-- Fish body -->
+  <path d="M48 32 C48 39 37 45 26 43 C20 41 16 38 12 32 C16 26 20 23 26 21 C37 19 48 25 48 32 Z" fill="url(#nemoGrad)"/>
+  <!-- Tail fin -->
+  <path d="M14 32 L4 23 C7 29 7 35 4 41 Z" fill="#E2583E"/>
+  <!-- White stripe -->
+  <path d="M30 21.5 C34 26 34 38 30 42.5 C26 41.5 26 22.5 30 21.5 Z" fill="#FFFFFF"/>
+  <!-- Eye -->
+  <circle cx="42" cy="29" r="3.5" fill="#FFFFFF"/>
+  <circle cx="43" cy="29" r="2" fill="#123D4A"/>
+  <!-- Bubble -->
+  <circle cx="50" cy="22" r="2.5" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="55" cy="17" r="1.5" fill="none" stroke="#FFFFFF" stroke-width="1.2" opacity="0.6"/>
+</svg>

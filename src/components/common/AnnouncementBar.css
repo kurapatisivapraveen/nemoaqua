@@ -1,0 +1,61 @@
+.announcement-bar {
+  background: linear-gradient(90deg, #123D4A 0%, #159EAA 100%);
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 6px 0;
+  position: relative;
+  z-index: 40;
+}
+
+.announcement-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.announcement-message {
+  display: flex;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.announcement-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.announcement-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #EBF8F9;
+  transition: color var(--transition-fast);
+}
+
+.announcement-link:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.announcement-actions .divider {
+  opacity: 0.4;
+}
+
+@media (max-width: 768px) {
+  .announcement-actions {
+    display: none;
+  }
+  .announcement-message {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+}

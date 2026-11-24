@@ -1,0 +1,32 @@
+export const TESTIMONIALS = [
+  {
+    id: 1,
+    name: 'Rajesh Kumar',
+    location: 'Chennai',
+    rating: 5,
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80',
+    title: 'Extremely Healthy Betta & Ultra-Clear Tank',
+    comment: 'The Crown Tail Betta arrived active and vibrant! Ordered via WhatsApp and got doorstep delivery in under 3 hours with warm acclimation packaging. Best aquarium store in town.',
+    date: '2 days ago',
+  },
+  {
+    id: 2,
+    name: 'Priya Sundaram',
+    location: 'Besant Nagar',
+    rating: 5,
+    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80',
+    title: 'Knowledgeable Staff & Quality Aquascaping Plants',
+    comment: 'I am a beginner with planted tanks. The Nemo Aquarium team guided me on choosing low-light Anubias and helped cycle my tank safely before adding tetras. Outstanding service!',
+    date: '1 week ago',
+  },
+  {
+    id: 3,
+    name: 'Karthik Raman',
+    location: 'Adyar',
+    rating: 5,
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80',
+    title: 'Superb Canister Filter & Free WhatsApp Guidance',
+    comment: 'Purchased the AquaPro 1000 canister filter. Water in my 150L tank is now crystal clear. The store owner even answered my setup questions over a WhatsApp call.',
+    date: '3 weeks ago',
+  },
+];

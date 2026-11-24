@@ -1,0 +1,244 @@
+@import './variables.css';
+@import './animations.css';
+
+/* CSS Reset & Defaults */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-soft-bg);
+  color: var(--color-dark-text);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-deep-ocean);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* Base Layout Containers */
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.page-wrapper {
+  min-height: calc(100vh - var(--navbar-height) - 400px);
+  padding-bottom: 60px;
+}
+
+/* Button System */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 12px 22px;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  text-align: center;
+  user-select: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: var(--color-primary-aqua);
+  color: var(--color-white);
+  box-shadow: 0 4px 14px rgba(21, 158, 170, 0.25);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-aqua-hover);
+  box-shadow: 0 6px 18px rgba(21, 158, 170, 0.35);
+}
+
+.btn-ocean {
+  background-color: var(--color-deep-ocean);
+  color: var(--color-white);
+}
+
+.btn-ocean:hover {
+  background-color: var(--color-deep-ocean-hover);
+}
+
+.btn-whatsapp {
+  background-color: #25D366;
+  color: var(--color-white);
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.25);
+}
+
+.btn-whatsapp:hover {
+  background-color: #1EBE5D;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.35);
+}
+
+.btn-secondary {
+  background-color: var(--color-fresh-green);
+  color: var(--color-white);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-fresh-green-hover);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border-color: var(--color-primary-aqua);
+  color: var(--color-primary-aqua);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-primary-aqua-light);
+}
+
+.btn-outline-ocean {
+  background-color: transparent;
+  border-color: var(--color-deep-ocean);
+  color: var(--color-deep-ocean);
+}
+
+.btn-outline-ocean:hover {
+  background-color: rgba(18, 61, 74, 0.06);
+}
+
+.btn-sm {
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  border-radius: var(--radius-sm);
+}
+
+.btn-lg {
+  padding: 14px 28px;
+  font-size: 1.05rem;
+  border-radius: var(--radius-md);
+}
+
+/* Badge Styles */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.badge-coral {
+  background-color: var(--color-accent-coral);
+  color: var(--color-white);
+}
+
+.badge-aqua {
+  background-color: var(--color-primary-aqua-light);
+  color: var(--color-primary-aqua);
+}
+
+.badge-green {
+  background-color: var(--color-fresh-green-light);
+  color: #1b7352;
+}
+
+/* Card Component Base */
+.card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-border-hover);
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--color-muted-text);
+  padding: 18px 0;
+}
+
+.breadcrumbs a {
+  color: var(--color-muted-text);
+}
+
+.breadcrumbs a:hover {
+  color: var(--color-primary-aqua);
+}
+
+.breadcrumbs span.current {
+  color: var(--color-deep-ocean);
+  font-weight: 600;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-soft-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #A0C3C9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-aqua);
+}

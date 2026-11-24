@@ -1,0 +1,54 @@
+:root {
+  /* Brand Color Palette */
+  --color-primary-aqua: #159EAA;
+  --color-primary-aqua-hover: #128994;
+  --color-primary-aqua-light: #EBF8F9;
+  
+  --color-deep-ocean: #123D4A;
+  --color-deep-ocean-hover: #0D2C36;
+  --color-deep-ocean-light: #1A5465;
+
+  --color-fresh-green: #72BFA3;
+  --color-fresh-green-hover: #60ad92;
+  --color-fresh-green-light: #EDF7F4;
+
+  --color-soft-bg: #F3FAF9;
+  --color-white: #FFFFFF;
+  --color-dark-text: #263B42;
+  --color-muted-text: #607982;
+  --color-light-text: #8FA2A8;
+
+  --color-accent-coral: #E2583E;
+  --color-accent-coral-light: #FDF1EE;
+  
+  --color-border: #E0EFEF;
+  --color-border-hover: #BFDEE0;
+
+  /* Typography */
+  --font-primary: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  /* Elevation & Shadows */
+  --shadow-xs: 0 1px 3px rgba(18, 61, 74, 0.05);
+  --shadow-sm: 0 2px 8px rgba(18, 61, 74, 0.06);
+  --shadow-md: 0 6px 18px rgba(18, 61, 74, 0.08);
+  --shadow-lg: 0 12px 28px rgba(18, 61, 74, 0.12);
+  --shadow-xl: 0 20px 40px rgba(18, 61, 74, 0.16);
+
+  /* Border Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Layout */
+  --container-max-width: 1240px;
+  --navbar-height: 76px;
+}
